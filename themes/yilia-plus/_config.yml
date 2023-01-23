@@ -1,12 +1,12 @@
 ﻿# Header-菜单
 menu:
   主页: /
-  技术笔记: https://zhousiwei.gitee.io/ibooks/
+  技术笔记: https://app.gitbook.com/o/TdJjceFMyIDqiw6SGHh5/home
   随笔: /tags/随笔/
 
 # subNav-子导航
 subNav:
-  - github: "#"
+  - github: https://github.com/liu-cui
   - github: "#" # (支持设置多个)
   - gitee: "#" # 码云
   - jianshu: "#" #简书
@@ -16,13 +16,13 @@ subNav:
   # - rss: "#"
   # - zhihu: "#"
   # - qq: "img/2434387555.jpg"
-  # - weixin: "img/weixin_.png"
+  - weixin: "img/weixin_.jpg"
   # - weibo: "#"
   # - douban: "#"
   # - segmentfault: "#"
   # - bilibili: "#"
   # - acfun: "#"
-  # - mail: "mailto:zhousiwei0911@qq.com"
+  # - mail: "mailto:awayanan@alumni.tongji.edu.cn"
   # - facebook: "#"
   # - google: "#"
   # - twitter: "#"
@@ -52,7 +52,7 @@ excerpt_link: more
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
-mathjax: false
+mathjax: true
 
 # Open link in a new tab | 是否在新窗口打开链接
 open_in_new:
@@ -87,12 +87,12 @@ baidu_analytics: ''
 google_analytics: ''
 
 # 网站图标
-favicon: /favicon.ico
+# favicon: /favicon.ico
 
 # 你的头像url
 avatar: /img/head.jpg
 
-# 是否开启分享
+# 是否开启分v享
 share_jia: true
 
 # 评论：1、畅言；2、Disqus；3、Gitment；4、Giteement
@@ -141,10 +141,10 @@ busuanzi:
 
 # 网易云音乐插件
 music:
-  enable: false
+  enable: true
   # 播放器尺寸类型(1：长尺寸、2：短尺寸)
   type: 2
-  #id: 1334445174  # 网易云分享的音乐ID(更换音乐请更改此配置项)
+  id: 1377247  # 网易云分享的音乐ID(更换音乐请更改此配置项)
   autoPlay: true  # 是否开启自动播放
   # 提示文本(关闭请设置为false)
   text: '这似乎是首纯音乐，请尽情的欣赏它吧！'
@@ -215,7 +215,7 @@ activate_power_mode:
 
 # 飘雪特效
 # https://github.com/MlgmXyysd/snow.js
-snow: false
+snow: true
 
 # 看板娘动态模型插件
 ## https://github.com/JoeyBling/live2d-widget.js
@@ -268,19 +268,19 @@ smart_menu:
 friends:
   技术笔记:  #网站名称
     #网站地址
-    url: https://zhousiwei.gitee.io/ibooks/
+    url: https://github.com/liu-cui
     #网站图片(可忽略不写)
-    img: https://zhousiwei.gitee.io/ibooks/favicon.ico
+    #img: https://zhousiwei.gitee.io/ibooks/favicon.ico
     #网站简介(可忽略不写)
-    description: 记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析
+    description: 记录工作和学习过程中的笔记：努力学习，天天向上
   GitHub:
-    url: https://github.com/JoeyBling
+    url: https://github.com/liu-cui
   码云:
-    url: https://gitee.com/zhousiwei
+    url: https://gitee.com/liu-cui
   简书:
-    url: https://www.jianshu.com/u/02cbf31a043a
+    # url: 
   CSDN:
-    url: https://blog.csdn.net/qq_30930805
+    url: https://blog.csdn.net/weixin_40922982
 
 # 关于我
-aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: 主要涉及技术：<br>运筹优化学习笔记<br>开源爱好者、java、c++<br><br>联系微信:AWAYANAN404<br><br><br><br>新的一年不要生病<br>更加热爱生活
