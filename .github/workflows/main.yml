@@ -61,10 +61,9 @@ jobs:
           # Giee 仓库
         # 将编译后的博客文件推送到指定仓库
         run: |
-          cd ./public && git init && git add . 
+          cd ./public && git init && git add . && git branch -m main
           git config user.name "liucui"                   
-          git config user.email "15301638120@163.com" 
-          git config user.password "lc15301638120"    
+          git config user.email "15301638120@163.com"     
           git add .
           git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
           git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" main:main
