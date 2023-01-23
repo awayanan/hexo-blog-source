@@ -1,7 +1,7 @@
 ---
 title: Hello Nan
 欢迎来到我的博客主页
-
+给大家介绍一下自动化部署博客
 ## 介绍
 
 ### Create a new post
