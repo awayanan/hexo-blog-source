@@ -65,7 +65,7 @@ jobs:
           git config --global init.defaultBranch main
           git config user.name "liucui"                   
           git config user.email "15301638120@163.com"    
-          echo "# My Blog" >> README.md  && echo "awayanan.wang" >> CNAME
+          echo "# My Blog" >> README.md  && echo "www.awayanan.wang" >> CNAME
           git add .
           git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
           git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" main:main
