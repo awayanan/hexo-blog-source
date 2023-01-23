@@ -6,10 +6,9 @@ menu:
 
 # subNav-子导航
 subNav:
-  - github: "#"
-  - github: "#" # (支持设置多个)
-  - gitee: "#" # 码云
-  - jianshu: "#" #简书
+  - github: https://github.com/liu-cui
+  - gitee: https://gitee.com/liu-cui
+  # - jianshu: "#" #简书
   # - cnblog: "#"
   # - blog: "#"
   # - csdn: "#"
@@ -283,4 +282,4 @@ friends:
     url: https://blog.csdn.net/qq_30930805
 
 # 关于我
-aboutme: 主要涉及技术：<br>运筹优化<brjava|python|c++|...><br><br>我的邮箱：awaynan@alumni.edu.cn<br><br>新的一年不要生病<br>更加热爱生活
+aboutme: 主要涉及技术：<br>运筹优化<br>java|python|c++|...<br><br>我的邮箱：awaynan@alumni.edu.cn<br><br>新的一年不要生病<br>更加热爱生活
