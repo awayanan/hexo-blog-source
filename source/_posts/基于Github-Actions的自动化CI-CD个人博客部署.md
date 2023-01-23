@@ -3,6 +3,10 @@ title: 基于Github Actions的自动化CI/CD个人博客部署
 date: 2023-01-24 01:37:53
 tags:
 ---
+[TOCM]
+
+[TOC]
+
 # 你在干什么？
 
 用hexo撰写博客很方便，还可以结合github action 自动化部署博客，心动不如行动。
@@ -60,6 +64,7 @@ hexo d
 ```
 
 4、hexo组件的一些介绍
+
 
 
 
