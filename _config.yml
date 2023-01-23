@@ -104,4 +104,4 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:liu-cui/liu-cui.github.io.git
-  branch: master
+  branch: main
