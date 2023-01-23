@@ -50,7 +50,7 @@ jobs:
         # 编译 markdown 文件
         run: |
           hexo clean 
-          hexo g && gulp
+          hexo g
           hexo d
          
         
