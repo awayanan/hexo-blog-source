@@ -57,7 +57,7 @@ jobs:
       - name: Deploy hexo blog, upload GitHub repository
         env: 
           # Github 仓库
-          GITHUB_REPO: github.com/liu-cui/liu-cui.github.io
+          GITHUB_REPO: https://github.com/liu-cui/liu-cui.github.io
           # Giee 仓库
         # 将编译后的博客文件推送到指定仓库
         run: |
