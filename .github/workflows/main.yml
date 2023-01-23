@@ -50,7 +50,8 @@ jobs:
         # 编译 markdown 文件
         run: |
           hexo clean 
-          hexo g
+          hexo g && gulp
+          hexo d
          
         
       # 2、部署到 GitHub Pages
