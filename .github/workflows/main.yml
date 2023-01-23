@@ -19,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2  #软件市场的名称
         with: # 参数
-          submodules: true
+          submodules: false
           persist-credentials: false
           
       - name: Setup Node.js
