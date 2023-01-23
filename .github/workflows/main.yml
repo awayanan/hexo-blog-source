@@ -1,4 +1,4 @@
-name: Deploy Hexo-Blog CI/CD  # 自动化CI/CD
+name: Deploy HexoBlog # 自动化CI/CD
 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
@@ -61,7 +61,7 @@ jobs:
           # Giee 仓库
         # 将编译后的博客文件推送到指定仓库
         run: |
-          cd ./public && git init && git add . && git branch -M main
+          cd ./public && git init && git add . 
           git config user.name "liucui"                   
           git config user.email "15301638120@163.com"     
           git add .
