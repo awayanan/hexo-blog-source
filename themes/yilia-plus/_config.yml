@@ -1,14 +1,15 @@
 ﻿# Header-菜单
 menu:
   主页: /
-  技术笔记: /
-  随笔: /
-  #随笔: /tags/随笔/
+  技术笔记: /tags/技术笔记/
+  随笔: /tags/随笔/
+  读书: /tags/读书/
 
 # subNav-子导航
 subNav:
   - github: https://github.com/liu-cui
   - gitee: https://gitee.com/liu-cui
+  - twitter: https://twitter.com/awayfromnan/
   # - jianshu: "#" #简书
   # - cnblog: "#"
   # - blog: "#"
