@@ -7,7 +7,7 @@ tags:
 toc: true
 reward: false 
 ---
-[toc]
+@[toc]
 
 # 你在干什么？
 
