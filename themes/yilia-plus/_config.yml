@@ -105,7 +105,7 @@ changyan_appid: false
 changyan_conf: false
 
 # 2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia-plus的
-disqus: false
+disqus: true
 
 # 3、Gitment----基于GitHub的评论系统(关闭请设置gitment_owner为false)
 # 关于如何集成:https://www.jianshu.com/p/ac7658cc912f
@@ -114,8 +114,8 @@ gitment_owner: liu-cui     #你的 GitHub ID
 gitment_remote: false
 gitment_repo: 'liu-cui.github.io'          #存储评论的 repo name(需要在Github创建)
 gitment_oauth:
-  client_id: '80aa4bab4aa5e8fa8765'           #client ID
-  client_secret: '3a6278e67fbf00f666c405571aaec5beb671de04'       #client secret
+  client_id: '16fb7685a10c5abb190e'           #client ID
+  client_secret: 'ca11f3c980b271e0bbc152d912892c96f253f8b7'       #client secret
 
 # 4、Giteement----【国内用户建议使用这个，相对比较快】
 # 关于如何集成:https://www.jianshu.com/p/f5c4633524c7
