@@ -87,7 +87,7 @@ baidu_analytics: ''
 google_analytics: ''
 
 # 网站图标
-favicon: /favicon.ico
+favicon: /img/favicon.ico
 
 # 你的头像url
 avatar: /img/head.jpg
@@ -141,13 +141,13 @@ busuanzi:
 
 # 网易云音乐插件
 music:
-  enable: false
+  enable: true
   # 播放器尺寸类型(1：长尺寸、2：短尺寸)
   type: 2
-  #id: 1334445174  # 网易云分享的音乐ID(更换音乐请更改此配置项)
+  id: 1377247  # 网易云分享的音乐ID(更换音乐请更改此配置项)
   autoPlay: true  # 是否开启自动播放
   # 提示文本(关闭请设置为false)
-  text: '这似乎是首纯音乐，请尽情的欣赏它吧！'
+  text: 'I Don't Want To Say GoodBye'
 
 # 页面点击小红心
 clickLove:
@@ -174,7 +174,7 @@ copyright_type: 2
 copyright_text: 
 
 # 网站成立年份(默认为 2018，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2018
+since: 2022
 
 # Progress Bar | 页面加载进度条
 # Demo: http://github.hubspot.com/pace/docs/welcome/
@@ -215,7 +215,7 @@ activate_power_mode:
 
 # 飘雪特效
 # https://github.com/MlgmXyysd/snow.js
-snow: true
+snow: false
 
 # 看板娘动态模型插件
 ## https://github.com/JoeyBling/live2d-widget.js
@@ -283,4 +283,4 @@ friends:
     #url: https://blog.csdn.net/qq_30930805
 
 # 关于我
-aboutme: 主要涉及技术：<br>运筹优化技术学习与分享<br>技术栈：java|python|c++|...<br><br>我的邮箱：awaynan@alumni.edu.cn<br><br>新的一年不要生病<br>更加热爱生活
+aboutme: 人生如棋，黑白相间<br><br>技术栈：java|python|c++|...<br><br>我的邮箱：awaynan@alumni.edu.cn<br><br>新的一年不要生病<br>更加热爱生活
