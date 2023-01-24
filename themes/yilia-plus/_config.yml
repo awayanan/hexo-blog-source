@@ -7,9 +7,9 @@ menu:
 
 # subNav-子导航
 subNav:
-  - github: https://github.com/liu-cui
-  - gitee: https://gitee.com/liu-cui
-  - twitter: https://twitter.com/awayfromnan/
+  - github: "https://github.com/liu-cui"
+  - gitee: "https://gitee.com/liu-cui"
+  - twitter: "https://twitter.com/awayfromnan/"
   # - jianshu: "#" #简书
   # - cnblog: "#"
   # - blog: "#"
@@ -23,7 +23,7 @@ subNav:
   # - segmentfault: "#"
   # - bilibili: "#"
   # - acfun: "#"
-  # - mail: "mailto:zhousiwei0911@qq.com"
+  - mail: "awaynan@alumni.edu.cn"
   # - facebook: "#"
   # - google: "#"
   # - twitter: "#"
@@ -33,7 +33,7 @@ subNav:
 hover_effect:
   ## `global` 0: Set separately, 1: Enable global 2: Close global
   ## `global` 0: 分开设置, 1: 全局启用, 2: 全局关闭
-  global: 2
+  global: 1
   # SubNav-导航
   subNav: true
 
