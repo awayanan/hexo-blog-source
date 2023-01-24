@@ -112,10 +112,10 @@ disqus: false
 gitment_owner: liu-cui     #你的 GitHub ID
 # 是否使用官方js(false可以提升访问速度，本地修改过一部分的js，官方js可能会出现服务器不稳定，不太建议使用)
 gitment_remote: false
-gitment_repo: 'gitment-repo'          #存储评论的 repo name(需要在Github创建)
+gitment_repo: 'liu-cui.github.io'          #存储评论的 repo name(需要在Github创建)
 gitment_oauth:
   client_id: '80aa4bab4aa5e8fa8765'           #client ID
-  client_secret: 'b63d99683bc3efed6baf32352a7c00704a765dc1'       #client secret
+  client_secret: '3a6278e67fbf00f666c405571aaec5beb671de04'       #client secret
 
 # 4、Giteement----【国内用户建议使用这个，相对比较快】
 # 关于如何集成:https://www.jianshu.com/p/f5c4633524c7
