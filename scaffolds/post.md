@@ -1,5 +1,5 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+tags: [文章,随笔]
 ---
