@@ -8,8 +8,8 @@ subtitle: ''
 description: ''
 keywords:
 author: Awayanan
-language: zh-cn
-timezone: ''
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -125,3 +125,18 @@ jsonContent:
       excerpt: false
       categories: false
       tags: true
+
+# Extensions
+plugins:
+  hexo-generator-feed
+
+# Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# https://github.com/JoeyBling/hexo-filter-image
+filter_image:
+   # 日志是否启用
+   #   log: true
