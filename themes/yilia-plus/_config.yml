@@ -101,11 +101,11 @@ share_jia: true
 # 具体请参考wiki：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki
 
 # 1、畅言
-changyan_appid: true
-changyan_conf: true
+changyan_appid: false
+changyan_conf: false
 
 # 2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia-plus的
-disqus: false
+disqus: true
 
 # 3、Gitment----基于GitHub的评论系统(关闭请设置gitment_owner为false)
 # 关于如何集成:https://www.jianshu.com/p/ac7658cc912f
