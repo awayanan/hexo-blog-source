@@ -101,8 +101,8 @@ share_jia: true
 # 具体请参考wiki：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki
 
 # 1、畅言
-changyan_appid: false
-changyan_conf: false
+changyan_appid: true
+changyan_conf: true
 
 # 2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia-plus的
 disqus: false
