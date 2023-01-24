@@ -1,7 +1,7 @@
 ---
 title: 基于Github Actions的自动化CI/CD个人博客部署
 date: 2023-01-24 01:37:53
-tags: 技术笔记 hexo
+tags: [技术笔记,hexo]
 toc: true
 reward: false 
 ---
