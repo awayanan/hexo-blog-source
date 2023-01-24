@@ -1,9 +1,8 @@
 ---
 title: 基于Github Actions的自动化CI/CD个人博客部署
 date: 2023-01-24 01:37:53
-tags: 技术笔记
+tags: 技术笔记 hexo
 toc: true
-toc_float: true
 reward: false 
 ---
 
@@ -29,7 +28,7 @@ reward: false
 ### 准备环境
 1、`git`环境配置：略
 - 环境测试
-```bash
+```
 git -v
 ```
 
