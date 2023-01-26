@@ -6,6 +6,12 @@ tags:
   - hexo 
 ---
 
+
+
+[TOC]
+
+
+
 # 你在干什么？
 
 用hexo撰写博客很方便，还可以结合github action 自动化部署博客，心动不如行动。
@@ -20,9 +26,8 @@ tags:
 - git
 - node.js
 - hexo
-- 域名（个性化）
+- 域名（腾讯云、阿里云花几十块钱买一个，后续DNS解析一下）
 - ...
-- 腊月天气
 
 ### 准备环境
 1、`git`环境配置：略
@@ -39,7 +44,8 @@ npm -v
 ```
 
 3、`github`密钥配置：略，详情见github官方文档：如何创建[个人访问令牌](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)。
-- 如何应用，在设置中新建一个名为**ACCESS_TOKEN**的密钥，然后进入开发项目，在该项目的配置加入该个人密钥。
+
+- 如何应用，在github中设置中新建一个名为**ACCESS_TOKEN**的密钥，然后进入开发项目，在该项目的配置加入该个人密钥。
 
 3、hexo环境配置
 - 使用npm安装hexo博客程序
@@ -49,11 +55,11 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org  # 安装淘宝�
 ```
 - 初始化组件及预览
 ```bash
-hexo init
-hexo clean
-hexo g
-hexo s
-hexo d
+hexo init   # 初始化
+hexo clean  # 清理缓存
+hexo g      # 生成博客网页html
+hexo s      # 本地预览
+hexo d      # 推送
 ```
 - 其他问题，如出现**ERROR Deployer not found: git**，执行以下
 ```bash
@@ -62,10 +68,66 @@ npm install -- save hexo-deployer-git
 hexo d
 ```
 
-4、hexo组件的一些介绍
+- 执行`hexo s`进入本地访问地址预览博客
 
+4、hexo博客组件简单介绍
 
+```bash
+├─_config.yml     # 博客的配置
+├─public          # 生成的网页文件html
+├─scaffolds       # 存放md默认模版的地方，后续每次新建md文件的默认模版如果要变动，修改post.md即可
+├─source          # 存放博客源文件的地方，每次新建的md博客文件都会存放在这里
+|   ├─_posts
+|   |   ├─hello-world.md
+|   |   ├─基于hexo的持续集成博客推荐.md
+|   |   └我的第一篇博客.md
+├─themes          # 博客的主题配置，网上挺多开源的，博主选用的是yilia-plus
+```
 
+具体来说，
 
+- **_config.yml**
+  网站的配置信息，可以在里面配置大部分的参数。
+
+  修改_config.yml文件: theme: yilia-plus
+
+- **package.json**
+  应用程序的信息。有默认安装程序，可自行移除。
+
+- **scaffolds**
+  模版文件夹。新建文章时，hexo会根据scaffold来建立文件
+  hexo的模版是指在新建文章中默认填充的内容。如，当我们修改scaffold/post.md中的Front-matter内容时，那么每次新建一篇文章时都会包含这个修改。
+
+- **source**
+  资源文件夹时存放用户资源的地方。
+  _posts文件夹存放博客文档.md
+
+- **themes**
+  主题文件夹。hexo会根据主题来生成静态页面。
+
+5、重点说一下**_config.yml**
+
+推送至自己的仓库，建一个名为yourgithubname.github.io的仓库，然后找到下面这里，修改推送的仓库，和要推送的分支
+
+```yaml
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repo: git@github.com:yourname/yourname.github.io.git
+  branch: main
+```
+
+到这里，一个基础的博客网页已经完成了，后续以下的步骤，每次自己新建文章然后重复部署推送的操作也是可以的。
+
+```
+hexo n "demo.md"
+hexo g
+hexo d
+```
+
+截至此，所有的网页生成文件均在yourgithubname.github.io的仓库中，项目开发文件都在你当前所使用的电脑中，如果你要切换别的电脑的话就有些麻烦了，而且每次重复这些部署的命令也挺烦的。要是能每次推送完开发源代码，能自动给我部署就好了。
+
+❤哎，这不就是CI/CD的路子嘛
 
 # 干不完了。。
