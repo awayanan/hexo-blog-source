@@ -2,10 +2,11 @@
 title: 基于Github Actions的自动化CI/CD个人博客部署
 date: 2023-01-24 01:37:53
 tags: 
-  - 技术笔记
-  - hexo 
+  - 博客
+  - hexo
+  - Github Actions
 ---
-
+<img alt="github actions" src="https://img.shields.io/badge/-Github_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" /> <img alt="Hexo" src="https://img.shields.io/badge/-Hexo-2088FF?style=flat-square&logo=hexo&logoColor=white" /> <img alt="Npm" src="https://img.shields.io/badge/-Npm-2088FF?style=flat-square&logo=npm&logoColor=white" /> 
 
 # 你在干什么？
 
@@ -127,3 +128,26 @@ hexo d
 
 # 干不完了。。
 回到最初的起点，一个仓库只管推送源代码，另一个仓库存放自动生成的html文件。只需要关注推送的仓库，其他的一概不管，推送完自动部署即可。怎么实现。
+## 部署
+1、在github上新建一个仓库，存放hexo源文件，如hexo-blog-source
+2、在该仓库配置**ACCESS_TOKEN**密钥
+3、在该仓库新建`main.yml`工作流，来生成并部署hexo网页，这个咋写后续再聊，很简单。
+
+## 绑定域名
+1、花个几十去腾讯买个域名在yourname.github.io仓库目录下，新建`CNAME`，里面填上自己的域名，如`www.awayanan.wang`，由于这个仓库是由github actition工作流生成的，所以不要想着自己在仓库直接建，部署仓库下的文件皆由`main.yml`执行生成。
+2、域名绑定之后，要做dns解析，在哪家买的就直接用哪家的dns解析服务就行。
+
+## 个性化页面
+1、404页面，个性化设置（后续）
+2、总结页面，个性化设置（后续）
+3、去除开源博客的广告，如果不知道在哪，打开网页检查，选中元素，即可知晓，本文选用的开源主题其广告是在页面右上角和页脚右侧，找到这两处的js文件，删除或者改成自己的链接即可。
+
+
+## 评论功能
+1、直接开启Disqus最方便
+
+
+## 页面刷新加速
+1、待更新。。。
+
+
