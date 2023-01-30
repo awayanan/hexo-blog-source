@@ -132,8 +132,7 @@ hexo d
 ### CI/CD概述
 - CI: 指持续集成，属于开发人员的自动化流程。一次成功的CI表明应用代码的新更改会定期构建、测试并合并到共享存储库中。
 - CD: 指持续交付或者持续部署。持续交付通常指开发人员对应用的更改会自动进行错误测试并上上传到存储库（如GitHub）,然后由运维团队将其部署到实时生产环境中。持续交付的目的也就是为了确保尽可能减少部署新代码时所需要的工作量。而持续部署指的是，自动将开发人员的更改从存储库发布到生产环境，以供客户使用。
-
-![avatar](pictures/ci-cd-flow.png)
+![CI/CD pipeline](https://resources.github.com/assets/img/ci-cd/pipeline.png "CI/CD pipeline")
 
 1、在github上新建一个仓库，存放hexo源文件，如hexo-blog-source
 2、在该仓库配置**ACCESS_TOKEN**密钥
