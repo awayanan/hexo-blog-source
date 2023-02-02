@@ -109,7 +109,7 @@ deploy:
 # Yilia-plus Content Config
 jsonContent:
     meta: false
-    pages: false
+    pages: true
     posts:
       title: true
       date: true
