@@ -70,6 +70,14 @@ default_category: uncategorized
 category_map:
 tag_map:
 
+
+# Archives
+collections:
+  archives:
+    output: true
+    permalink: /archives/:path/
+
+
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
