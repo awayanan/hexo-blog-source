@@ -15,5 +15,10 @@
     {%- for post in site.posts -%}
     "{{ post.date | date: "%Y" }}"{% unless forloop.last %},{% endunless %}
     {%- endfor -%}
+],
+"month": [
+    {%- for post in site.posts -%}
+    "{{ post.date | date: "%B" }}"{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
 ]
 }
