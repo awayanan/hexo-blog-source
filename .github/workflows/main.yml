@@ -9,29 +9,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Generate Jekyll Archives
-        uses: kannansuresh/jekyll-blog-archive-workflow@master
-        with:
-          archive_url: "https://www.awayanan.wang/archives/archivedata"
-          archive_folder_path: "_archives"
-
-      - name: setup git config
-        run: |
-          git config user.name "liucui"
-          git config user.email "15301638120@163.com"          
-
-      - name: commit
-        run: |
-          git add --all
-          git commit -m "Created and updated archive files." || echo "No changes to commit."
-          git push origin main || echo "No changes to push."   
-
-  
   # This workflow contains a single job called "build"
   Blog_CI-CD:
     runs-on: ubuntu-latest  # 服务器环境
