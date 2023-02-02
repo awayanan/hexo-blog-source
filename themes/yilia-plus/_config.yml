@@ -59,7 +59,7 @@ mathjax: true
 open_in_new:
   article: false  # 文章链接
   menu: true   # 导航菜单
-  subNav: true  # 子菜单
+  subNav: false  # 子菜单
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
