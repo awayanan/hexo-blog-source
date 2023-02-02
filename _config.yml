@@ -72,10 +72,10 @@ tag_map:
 
 
 # Archives
-collections:
-  archives:
-    output: true
-    permalink: /archives/:path/
+# collections:
+#   archives:
+#     output: true
+#     permalink: /archives/:path/
 
 
 # Metadata elements
