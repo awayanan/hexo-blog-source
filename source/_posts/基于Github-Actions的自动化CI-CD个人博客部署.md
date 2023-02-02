@@ -44,7 +44,7 @@ npm -v
 
 - 如何应用，在github中设置中新建一个名为**ACCESS_TOKEN**的密钥，然后进入开发项目，在该项目的配置加入该个人密钥。
 
-3、hexo环境配置
+4、hexo环境配置
 - 使用npm安装hexo博客程序
 ```bash
 npm install -g hexo-cli --registry=https://registry.npm.taobao.org  # 安装淘宝源npm
@@ -102,7 +102,7 @@ hexo d
 - **themes**
   主题文件夹。hexo会根据主题来生成静态页面。
 
-5、重点说一下**_config.yml**
+5、重点说一下 **_config.yml**
 
 推送至自己的仓库，建一个名为yourgithubname.github.io的仓库，然后找到下面这里，修改推送的仓库，和要推送的分支
 
