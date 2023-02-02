@@ -1,7 +1,7 @@
 ﻿# Header-菜单
 menu:
   主页: /categories/
-  技术笔记: /tags/技术笔记/
+  技术笔记: /categories/技术笔记/
   随笔: /tags/随笔/
   读书: /tags/读书/
 
@@ -58,8 +58,8 @@ mathjax: true
 # Open link in a new tab | 是否在新窗口打开链接
 open_in_new:
   article: false  # 文章链接
-  menu: true   # 导航菜单
-  subNav: false  # 子菜单
+  menu: false   # 导航菜单
+  subNav: true  # 子菜单
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
@@ -251,6 +251,8 @@ style:
 slider:
   # 是否默认展开tags板块
   showTags: true
+  showCategories: true
+
 
 # 智能菜单
 # 如不需要，将该对应项置为false
