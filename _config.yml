@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -124,7 +124,7 @@ jsonContent:
       path: true
       text: false
       raw: false
-      content: false
+      content: true
       slug: false
       updated: false
       comments: true
