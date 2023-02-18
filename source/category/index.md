@@ -2,7 +2,7 @@
 layout: page
 permalink: /category/
 ---
-
+<script>
 <h1>Archive of posts from {{ page.date | date: "%B %Y" }}</h1>
 
 <ul class="posts">
@@ -12,3 +12,4 @@ permalink: /category/
   </li>
 {% endfor %}
 </ul>
+</script>
