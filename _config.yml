@@ -154,3 +154,8 @@ filter_image:
 # UML
 plantuml:
   render: "PlantUMLServer"
+
+# 搜索框和今日诗词
+search:
+  path: search.xml
+  field: all

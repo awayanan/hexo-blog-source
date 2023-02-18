@@ -20,7 +20,34 @@
           </div>
         </div>
       </div>
-      <%- partial('_partial/footer') %>
+      <% if(theme.search) { %>
+    <div class="page-header" style="">
+    <%# 今日诗词网址： https://www.jinrishici.com/ %>
+    <span>🍻
+        <span id="jinrishici-sentence" title="今日诗词">正在加载今日诗词....</span>
+    </span>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+    <%# 《集成本地搜索 %>
+    <script type="text/javascript" src="/js/search.js"></script>
+    <span id="local-search" class="local-search local-search-plugin" style="">
+      <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
+      <i id="local-search-icon-search" class="icon" aria-hidden="true" title="站内搜索">🔍</i>
+      <div id="local-search-result" class="local-search-result-cls"></div>
+    </span>
+
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        if ($('.local-search').size()) {
+          $.getScript('/js/search.js', function() {
+            searchFunc("/search.xml", 'local-search-input', 'local-search-result');
+          });
+        }
+    </script>
+    <%# 集成本地搜索》 %>
+</div>
+<% } %>
+    <%- partial('_partial/footer') %>
     </div>
     <%- partial('_partial/after-footer') %>
     <%- partial('_partial/tools') %>
