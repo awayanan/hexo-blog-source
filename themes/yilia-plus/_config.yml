@@ -1,11 +1,15 @@
 ﻿# Header-菜单
 menu:
   主页: /archives/
-  技术笔记: /categories/技术笔记/
-  运筹优化: /categories/运筹优化/
-  机器学习: /categories/机器学习/
-  随笔: /categories/随笔/
-  读书: /categories/读书/
+  技术笔记: /category/技术笔记/
+  运筹优化: /category/运筹优化/
+  机器学习: /category/机器学习/
+  随笔: /category/随笔/
+  读书: /category/读书/
+
+# UML
+plantuml:
+  render: "PlantUMLServer"
 
 # subNav-子导航
 subNav:
@@ -171,7 +175,7 @@ baidu_push: false
 # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
 copyright_type: 2
 # 版权声明自定义文本(关闭请设置为false)
-copyright_text: 
+copyright_text:
 
 # 网站成立年份(默认为 2018，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
 since: 2022
