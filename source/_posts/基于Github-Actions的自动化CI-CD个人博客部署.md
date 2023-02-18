@@ -28,12 +28,14 @@ tags:
 ### 准备环境
 1、`git`环境配置：略
 - 环境测试
-```
+
+```bash
 git -v
 ```
 
 2、`node.js`环境安装：略
 - 环境测试
+
 ```bash
 node -v
 npm -v
@@ -45,19 +47,23 @@ npm -v
 
 4、hexo环境配置
 - 使用npm安装hexo博客程序
+
 ```bash
 npm install -g hexo-cli --registry=https://registry.npm.taobao.org  # 安装淘宝源npm
 npm install -g cnpm --registry=https://registry.npm.taobao.org  # 安装淘宝源cnpm
 ```
 - 初始化组件及预览
+
 ```bash
 hexo init   # 初始化
 hexo clean  # 清理缓存
 hexo g      # 生成博客网页html
 hexo s      # 本地预览
 hexo d      # 推送
+
 ```
 - 其他问题，如出现**ERROR Deployer not found: git**，执行以下
+
 ```bash
 npm uninstall hexo-deployer-git
 npm install -- save hexo-deployer-git
@@ -116,7 +122,7 @@ deploy:
 
 到这里，一个基础的博客网页已经完成了，后续以下的步骤，每次自己新建文章然后重复部署推送的操作也是可以的。
 
-```
+```bash
 hexo n "demo.md"
 hexo g
 hexo d
@@ -124,20 +130,23 @@ hexo d
 
 7、[hexo常用命令](https://hexo.io/docs/commands "hexo常用命令")
 - **init**
-  ```
+
+  ```bash
   hexo init [folder]  # 初始化网站，如果没有folder则会在当前目录下新建
   ```
 - **new**
-  ```
+
+  ```bash
   hexo new [layout] <title>  # 创建新文章。如果没有提供布局，Hexo 将使用 _config.yml 中的 default_layout。如果标题包含空格，请用引号将其括起来
   ```
+  
   - `-p`, `--path` 指定地址，自定义新建文章地址
 
-  ```
+  ```bash
   hexo new page --path about/me "About me"  # 新建source/about/me.md
   hexo new page --path about/me             # 新建source/_posts/about/me.md
-  ```
-
+  ``` 
+  
   - `-r`, `--replace` 如果文章存在则替换  
   - `-s`, `--slug` 自定义文章的`url`
 
