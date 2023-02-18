@@ -15,7 +15,7 @@ permalink: /404.html
 
 当然，你可以 **[点这里](https://www.awayanan.wang/)** 直接返回首页。
 
-![](https://github.com/liu-cui/liu-cui/blob/main/assets/github-contribution-grid-snake.svg)
+![](https://github.com/liu-cui/liu-cui/blob/main/assets/github-contribution-grid-snake.gif)
 
 <script>
 let countTime = 10;
