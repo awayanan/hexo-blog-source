@@ -138,9 +138,9 @@ giteement:
 
 # 访问量统计功能(不蒜子)
 busuanzi:
-  enable: true
-  site_visit: true  # 站点访问量显示
-  article_visit: true  # 文章访问量显示
+  enable: false
+  site_visit: false  # 站点访问量显示
+  article_visit: false  # 文章访问量显示
 
 # 网易云音乐插件
 music:
