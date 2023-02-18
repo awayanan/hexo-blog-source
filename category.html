@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /category/
+permalink: /tag/
 ---
 
 <h1>Archive of posts from {{ page.date | date: "%B %Y" }}</h1>
@@ -8,7 +8,7 @@ permalink: /category/
 <ul class="posts">
 {% for post in page.posts %}
   <li>
-    <span class="post-link">{{ post.categories }}</span>
+    <span class="post-link">{{ post.tag }}</span>
   </li>
 {% endfor %}
 </ul>
