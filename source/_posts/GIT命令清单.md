@@ -1,5 +1,5 @@
 ---
-title: 优化工具
+title: Git命令清单
 date: 2023-02-02 10:37:53
 categories:
   - 技术笔记
@@ -13,12 +13,14 @@ tags:
 通常由以下两种方式获取Git项目仓库的方式：
 - 将尚未进行版本控制的本地目录转换为Git仓库
 - 从其他服务器克隆一个已经存在的Git仓库
+
 ```commandline
 git init                              # 在当前目录新建一个Git代码仓库
 git init [project-folder]             # 新建目录,并将其初始化为一个Git代码库
 git clone [url]                       # 克隆一个远端的完整仓库到当前目录下 
 git clone [url] [destination-folder]  # 克隆一个远端的完整仓库到目标目录下
 ```
+
 ## 配置文件 config
 首先要做的就是设置自己的名字和邮件地址
 ```commandline
