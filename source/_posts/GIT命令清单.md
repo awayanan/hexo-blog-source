@@ -49,11 +49,11 @@ git config --global color.ui false
 ### 本地仓库关联远端仓库
 
 - 修改命令
-  ```commandline
-     git reset-url origin [url]
-  ```
+```commandline
+git reset-url origin [url]
+```
 - 删除重新添加
-  ```commandline
-     git remote rm origin 
-     git remote add origin [url]
-  ```
+```commandline
+git remote rm origin         
+git remote add origin [url]
+ ```
