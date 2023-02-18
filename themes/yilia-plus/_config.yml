@@ -1,7 +1,7 @@
 ﻿# Header-菜单
 menu:
   主页: /archives/
-  目录: /category/ || category
+  目录: /category
   技术笔记: /category/技术笔记/
   运筹优化: /category/运筹优化/
   机器学习: /category/机器学习/
