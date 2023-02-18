@@ -1,11 +1,10 @@
 ﻿# Header-菜单
 menu:
-  主页: /archives/
-  目录: /tag
-  技术笔记: /category/技术笔记/
-  运筹优化: /category/运筹优化/
-  机器学习: /category/机器学习/
-  随笔读书: /category/随笔读书/
+  📚归档: /archives/
+  👻技术笔记: /category/技术笔记/
+  🐶运筹优化: /category/运筹优化/
+  🍉机器学习: /category/机器学习/
+  🥭随笔读书: /category/随笔读书/
 
 # UML
 plantuml:
