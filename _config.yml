@@ -149,3 +149,8 @@ feed:
 filter_image:
    # 日志是否启用
    #   log: true
+
+
+# UML
+plantuml:
+  render: "PlantUMLServer"
