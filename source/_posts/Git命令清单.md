@@ -92,15 +92,11 @@ git diff --staged  # 比较已暂存文件与最后一次提交的文件差异
 git diff --cached  # 查看已经暂存起来的变化
 ```
 
-
-
 ### 忽略文件
 
 ```bash
 cat .gitignore
 ```
-
-
 
 ## 代码提交
 
@@ -126,7 +122,21 @@ git commit --amend
 ```bash
 git commit -m "first commit"
 git add forgotten_file
-git commit --amend
+git commit --amend -m [msg]         # 如果代码没有任何新的变化，则只是用来改写上一次的commit的提交信息
+git commit --amend [file1] [file2]  # 重做上一次commit，并且包括指定文件的新变化
+```
+
+新建一个`commit`，用来撤销指定的`commit`
+
+```bash
+git revert [commit]
+```
+
+移除未提交的变化，稍后再移入
+
+```bash
+git stash
+git stash pop
 ```
 
 ### 取消暂存的文件
@@ -143,26 +153,42 @@ git reset HEAD [file] ...  # 取消暂存文件: 修改未暂存的状态
 git checkout -- [file]     # 撤销修改：该文件在本地的任何修改都会消失
 ```
 
+### 恢复暂存区文件至工作区
+
+```bash
+git checkout [file]           # 恢复暂存区的指定文件至工作区
+git checkout [commit] [file]  # 恢复某个commit的指定文件到暂存区和工作区
+git checkout .                # 恢复暂存区所有文件至工作区
+```
+
+### 重置暂存区文件
+
+```bash
+git reset [file]           # 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变
+git reset --hard           # 重置暂存区和工作区，与上一次commit保持一致
+git reset [commit]         # 重置当前分支的指针为指定commit，同时重置暂存区，但是工作区保持不变
+git reset --hard [commit]  # 重置当前分支的HEAD为指定的commit，同时重置暂存区，但是工作区保持不变
+git reset --keep [commit]  # 重置当前HEAD为指定的commit，但保持暂存区和工作区不变
+```
+
 ### 查看提交历史 
 
 ```bash
 git log
+git reflog                                 # 显示当前分支最近几次提交
 git log -p[--patch] -2                     # 显示最近的两次提交差异
 git log --stat                             # 显示每次提交的简略信息
 git log --pretty=oneline    
 git log --pretty=format:"%h - %an, %ar : %s"
 git log --pretty=format:"%h %s" --graph    # 显示分支合并历史
-
-
 ```
 
-`git log`常用选项
-
-| 选项    | 说明                                  |
-| ------- | ------------------------------------- |
-| -p      | 按补丁格式显示每次提交引入的差异      |
-| --stat  | 显示每次提交的文件修改统计信息        |
-| --graph | 在日志旁以ASCII图形显示分支与合并历史 |
+```bash
+git diff
+git diff HEAD                         # 显示工作区与当前分支最新commit之间的差异
+git diff --cached [file]              # 显示暂存区和上一次commit的差异
+git diff --shortstat "@{0 day ago}"   # 显示今天写了多少代码
+```
 
 ### 本地仓库关联远端仓库
 
@@ -180,5 +206,20 @@ git remote add origin [url]
 ```
 
 ## 远程仓库的使用
+
+### 远程同步
+
+```bash
+git fetch [remote]        # 下载远程仓库的所有变动
+git remote -v             # 显示所有远程仓库
+git remote show [remote]  # 显示某个远程仓库的信息
+```
+
+### 关联远端
+
+```bash
+git remote add origin url  # 关联新的远程仓库,并命名
+git push -u origin "main"  # 推送本地仓库至远程仓库
+```
 
 ## 打标签
