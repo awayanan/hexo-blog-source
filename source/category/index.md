@@ -8,7 +8,7 @@ permalink: /category/
 <ul class="posts">
 {% for post in page.posts %}
   <li>
-    <span class="post-link">{{ post.categories }}</span>
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.categories }}</a>
   </li>
 {% endfor %}
 </ul>
