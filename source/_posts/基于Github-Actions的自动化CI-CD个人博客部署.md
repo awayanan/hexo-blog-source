@@ -131,24 +131,25 @@ hexo d
 7、[hexo常用命令](https://hexo.io/docs/commands "hexo常用命令")
 - **init**
 
-  ```bash
-  hexo init [folder]  # 初始化网站，如果没有folder则会在当前目录下新建
-  ```
+```bash
+hexo init [folder]  # 初始化网站，如果没有folder则会在当前目录下新建
+```
+
 - **new**
 
-  ```bash
-  hexo new [layout] <title>  # 创建新文章。如果没有提供布局，Hexo 将使用 _config.yml 中的 default_layout。如果标题包含空格，请用引号将其括起来
-  ```
+```bash
+hexo new [layout] <title>  # 创建新文章。如果没有提供布局，Hexo 将使用 _config.yml 中的 default_layout。如果标题包含空格，请用引号将其括起来
+```
   
-  - `-p`, `--path` 指定地址，自定义新建文章地址
+- `-p`, `--path` 指定地址，自定义新建文章地址
 
-  ```bash
-  hexo new page --path about/me "About me"  # 新建source/about/me.md
-  hexo new page --path about/me             # 新建source/_posts/about/me.md
-  ``` 
+```bash
+hexo new page --path about/me "About me"  # 新建source/about/me.md
+hexo new page --path about/me             # 新建source/_posts/about/me.md
+``` 
   
-  - `-r`, `--replace` 如果文章存在则替换  
-  - `-s`, `--slug` 自定义文章的`url`
+- `-r`, `--replace` 如果文章存在则替换  
+- `-s`, `--slug` 自定义文章的`url`
 
 
 截至此，所有的网页生成文件均在yourgithubname.github.io的仓库中，项目开发文件都在你当前所使用的电脑中，如果你要切换别的电脑的话就有些麻烦了，而且每次重复这些部署的命令也挺烦的。要是能每次推送完开发源代码，能自动给我部署就好了。
