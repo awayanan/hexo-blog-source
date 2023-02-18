@@ -1,0 +1,14 @@
+---
+layout: page
+permalink: /category/
+---
+
+<h1>Archive of posts from {{ page.date | date: "%B %Y" }}</h1>
+
+<ul class="posts">
+{% for post in page.posts %}
+  <li>
+    <span class="post-link">{{ post.categories }}</span>
+  </li>
+{% endfor %}
+</ul>
