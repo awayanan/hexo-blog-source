@@ -504,12 +504,6 @@ body {
     font-family:Helvetica Neue, Helvetica, STHeiTi, Arial, sans-serif;
     line-height:1.5;
     color:#333;
-    /* background-color:#fff; */
-    min-height:100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-        url('https://oss.yansheng.fun/wallpaper/qinshimingyue.jpg') no-repeat 0% 0%/ cover;
-    /* 设置鼠标的图标 */
-    cursor:url('https://oss.yansheng.fun/ico/cursor.ico'), default;
 }
 
 /* 因为超链接默认情况下是：cursor: pointer; 显示为手，这里进行设置 */

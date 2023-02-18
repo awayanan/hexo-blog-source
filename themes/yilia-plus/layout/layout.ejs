@@ -10,17 +10,7 @@
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       <div id="wrapper" class="body-wrap">
-        <div class="menu-l">
-          <div class="canvas-wrap">
-            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1"
-              class="anm-canvas"></canvas>
-          </div>
-          <div id="js-content" class="content-ll">
-            <%- body %>
-          </div>
-        </div>
-      </div>
-      <% if(theme.search) { %>
+            <% if(theme.search) { %>
     <div class="page-header" style="">
     <%# 今日诗词网址： https://www.jinrishici.com/ %>
     <span>🍻
@@ -47,6 +37,17 @@
     <%# 集成本地搜索》 %>
 </div>
 <% } %>
+  <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1"
+              class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            <%- body %>
+          </div>
+        </div>
+      </div>
     <%- partial('_partial/footer') %>
     </div>
     <%- partial('_partial/after-footer') %>
