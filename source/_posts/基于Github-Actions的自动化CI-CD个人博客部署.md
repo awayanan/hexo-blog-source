@@ -8,8 +8,6 @@ tags:
   - hexo
   - Github Actions
 ---
-<img alt="github actions" src="https://img.shields.io/badge/-Github_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" /> <img alt="Hexo" src="https://img.shields.io/badge/-Hexo-2088FF?style=flat-square&logo=hexo&logoColor=white" /> <img alt="Npm" src="https://img.shields.io/badge/-Npm-2088FF?style=flat-square&logo=npm&logoColor=white" /> 
-
 # 你在干什么？
 
 用hexo撰写博客很方便，还可以结合github action 自动化部署博客，心动不如行动。
@@ -178,5 +176,4 @@ hexo d
 
 ## 页面刷新加速
 1、后续
-
 
