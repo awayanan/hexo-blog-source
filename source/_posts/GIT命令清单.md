@@ -27,8 +27,8 @@ git config --global user.email "example@example.com"
 ```
 查看全局配置或者修改全局配置
 ```commandline
-git config --list         # 显示Git配置文件
-git config -e [--global]  # 编辑Git配置文件  
+git config --list  # 显示Git配置文件
+git config -edit   # 编辑Git配置文件  
 ```
 Git一般会自动着色大部分输出内容，如果喜欢朴素，也可以关掉。**没有RGB不干了**
 ```commandline
