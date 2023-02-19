@@ -1,5 +1,4 @@
 ---
-
 title: Git命令清单
 date: 2023-02-18 19:37:53
 categories:
@@ -10,7 +9,11 @@ tags:
 ---
 > 没有BUG的代码是不完整的
 
-## 初始化代码库 
+## 总览
+
+![](/images/git.png)
+
+## 初始化代码库
 
 通常由以下两种方式获取Git项目仓库的方式：
 
@@ -24,7 +27,7 @@ git clone [url]                       # 克隆一个远端的完整仓库到当�
 git clone [url] [destination-folder]  # 克隆一个远端的完整仓库到目标目录下
 ```
 
-## 配置文件 
+## 配置文件
 
 首先要做的就是设置自己的名字和邮件地址
 
@@ -46,7 +49,7 @@ Git一般会自动着色大部分输出内容，如果喜欢朴素，也可以�
 git config --global color.ui false
 ```
 
-## 增加删除文件 
+## 增加删除文件
 
 工作目录下的每一个文件都不外乎是这两种状态：**已跟踪** 或 **未跟踪**。已跟踪的文件是指哪些被纳入了版本控制的文件，在上一次快照中是有它们的记录的，在工作一段时间后，它们的状态可能是未修改，已修改又或是已经放入暂存区。简单来说，已跟踪的文件就是Git已经知道的文件了。
 
@@ -171,14 +174,14 @@ git reset --hard [commit]  # 重置当前分支的HEAD为指定的commit，同�
 git reset --keep [commit]  # 重置当前HEAD为指定的commit，但保持暂存区和工作区不变
 ```
 
-### 查看提交历史 
+### 查看提交历史
 
 ```bash
 git log
 git reflog                                 # 显示当前分支最近几次提交
 git log -p[--patch] -2                     # 显示最近的两次提交差异
 git log --stat                             # 显示每次提交的简略信息
-git log --pretty=oneline    
+git log --pretty=oneline  
 git log --pretty=format:"%h - %an, %ar : %s"
 git log --pretty=format:"%h %s" --graph    # 显示分支合并历史
 ```
@@ -201,7 +204,7 @@ git reset-url origin [url]
 - 删除重新添加
 
 ```bash
-git remote rm origin       
+git remote rm origin     
 git remote add origin [url]
 ```
 
