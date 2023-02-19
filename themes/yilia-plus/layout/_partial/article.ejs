@@ -2,6 +2,8 @@
   <div class="article-inner">
     <% if (post.link || post.title){ %>
       <header class="article-header">
+      	   <span id="jinrishici-sentence">正在加载今日诗词....</span>
+         <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
   <%- partial('post/title', {class_name: 'article-title'}) %>
   <% if (!post.noDate){ %>
   <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
@@ -56,7 +58,7 @@
     <% } %>
 
     <% if (((theme.copyright_type === 2) || (theme.copyright_type === 1 && post.copyright)) && !index){ %>
-    <div class="declare"> 
+    <div class="declare">
       <ul class="post-copyright">
         <li>
           <strong>本文作者：</strong>
