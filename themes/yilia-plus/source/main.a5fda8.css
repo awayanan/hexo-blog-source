@@ -135,5 +135,11 @@ https://ianlunn.github.io/Hover/ */
     -webkit-transition:width .3s ease;
     transition:width .3s ease
 }
-
+/* 今日诗词 */
+#jinrishici-sentence{
+  color:#27d7a1;
+  padding-left: 10px;
+  line-height: 45px;
+  font-size: 15px;
+}
 
