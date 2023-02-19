@@ -101,7 +101,7 @@ cat .gitignore
 ## 代码提交
 
 ```bash
-git commit -m "msg"   			        # 提交暂存区文件至仓库区
+git commit -m "msg"   			         # 提交暂存区文件至仓库区
 git commit [file1] [file2] ... -m "msg"  # 提交暂存区的指定文件至仓库区
 git commit -a                            # 提交工作区自上次commit之后的变化，直接提交至仓库区
 git commit -v                            # 提交时显示所有的diff信息
