@@ -7,11 +7,11 @@
       </h1>
       <% if (config.subtitle) { %>
         <h2 id="subtitle-wrap">
-          <span id="jinrishici-sentence">正在加载今日诗词....</span>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
           <a href="<%- url_for('/') %>" id="subtitle"><%= config.subtitle %></a>
         </h2>
       <% } %>
+      <span id="jinrishici-sentence">正在加载今日诗词....</span>
+      <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
     </div>
     <div id="header-inner" class="inner">
       <nav id="main-nav">
