@@ -141,7 +141,7 @@ https://ianlunn.github.io/Hover/ */
   background: linear-gradient(to right , #7A88FF, #7AFFAF)
   -webkit-background-clip: text;
   padding-left: 10px;
-  line-height: 45px;
+  line-height: 15px;
   font-size: 15px;
 }
 
