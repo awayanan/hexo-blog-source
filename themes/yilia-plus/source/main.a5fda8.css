@@ -138,10 +138,10 @@ https://ianlunn.github.io/Hover/ */
 /* 今日诗词 */
 #jinrishici-sentence{
   color: transparent;
-  background: linear-gradient(to bottom, #ffff, #f8fdff, #acf5ff, #67eeff, #24d8ff);
+  background: linear-gradient(to right , #7A88FF, #7AFFAF)
   -webkit-background-clip: text;
   padding-left: 10px;
   line-height: 45px;
-  font-size: 30px;
+  font-size: 15px;
 }
 
