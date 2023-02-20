@@ -138,7 +138,7 @@ https://ianlunn.github.io/Hover/ */
 /* 今日诗词 */
 #jinrishici-sentence{
   color: transparent;
-  background-image: linear-gradient(to right , #7A88FF, #7AFFAF);
+  background: linear-gradient(to bottom, #ffff, #f8fdff, #acf5ff, #67eeff, #24d8ff);
   -webkit-background-clip: text;
   padding-left: 10px;
   line-height: 45px;
