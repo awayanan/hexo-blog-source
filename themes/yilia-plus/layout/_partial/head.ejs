@@ -44,6 +44,8 @@
       background: <%= theme.style && theme.style.slider ? theme.style.slider : defaultCtnBg %>;
     }
   </style>
+  <span id="jinrishici-sentence">正在加载今日诗词....</span>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
   <%- partial('google-analytics') %>
   <%- partial('baidu-analytics') %>
   <% if (theme.clickLove && theme.clickLove.enable){ %>

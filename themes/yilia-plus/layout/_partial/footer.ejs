@@ -4,8 +4,6 @@
     	<div class="footer-left">
     		&copy; <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %><%- theme.since%>-<% } %><%= date(new Date(), 'YYYY') %> <a href="<%- yilia_plus_full_url('/') %>" target="_blank"><%= config.author || config.title %></a>
     	</div>
-    	   <span id="jinrishici-sentence">正在加载今日诗词....</span>
-         <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
       	<div class="footer-right">
 			  <%# "页脚 Litten(此配置项已弃用)" %>
 			  <% var defaultFooter = 'GitHub:<a href="https://github.com/liu-cui" target="_blank">liu-cui</a>'; %>
