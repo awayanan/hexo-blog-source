@@ -36,21 +36,81 @@ date: 2023-02-22 21:31:13
 
 <h3 id="02">Hive查询语句</h3>
 
-1. 分组`group by`
-   ```select name from student group by sex having score>95```
+1. 分组
+   1. `group by`
 2. 连接
    1. 内连接`inner join`
    2. 左连接`left join`
    3. 右连接`right join`
    4. 全外连接`full join`
-3. 排序`order by`
-   1. 升序`asc(ascend)`
-   2. 降序`desc(descend)`
+3. 排序
+   1. 升序`order by a,b asc(ascend)`
+   2. 降序`order by a,b desc(descend)`
 4. 排序
    1. 局部排序`sort by`, 基于mapreduce的内部排序，不是全局结果集的全排序
    2. 分区排序`distribute by`, 一般结合`sort by`使用进行分区排序
 
 <h3 id="03">Hive函数</h3>
 
+hive详情
+
 1. 聚合函数
-2. 关系运算
+
+   ```apache
+   count(expr)  # 计数
+   sum(expr)    # 求和
+   avg(expr)    # 平均
+   min(expr)    # 最小
+   max(expr)    # 最大
+   ```
+2. 条件函数
+
+   ```apache
+   if(expr, trueValue, falseValue)                                              # 如果expr为true，返回trueValue，否则返回falseValue
+   case when expr1 then result1 when expr2 then result2 ... else defaultValue   # 按照顺序判断expr是否满足条件，满足则返回对应结果，否则返回默认结果
+   ```
+3. 字符串函数
+
+   ```apache
+   concat(str1, str2, ..., pattern)    # 合并两个或者多个字符串，若有一个str为null，则最终返回Null
+   substr(str, start, length)          # 返回从指定位置开始的指定长度的字符串
+   length(str)                         # 返回字符串的长度
+   upper(str)
+   lower(str)
+   trim(str)
+   ltrim(str)
+   rtrim(str)
+   ```
+4. 数组函数
+
+   ```apache
+   array(expr1, expr2, ...)       # 创建一个数组，元素为表达式的值
+   array_contains(array, value)   # 判断数组是否包含指定值
+   array_size(array)              # 返回数组的大小
+   element_at(array, index)b      # 返回数组指定位置的元素值
+   ```
+5. 正则表达式函数
+
+   ```apache
+   regexp_extract(str, pattern)                # 从字符串中提取匹配正则表达式的字串
+   regexp_replace(str, pattern, replacement)   # 替换字符串中匹配正则表达式的字串
+   regexp_like(str, pattern)                   # 判断字符串是否匹配正则表达式
+   ```
+6. 数值函数
+
+   ```apache
+   abs(x)
+   ceil(x)      # 返回大于x的最小整数
+   floor(x)     # 返回小于等于x的最小整数
+   round(x, d)  # 保留d小数位数的x的四舍五入
+   ```
+7. 时间日期函数
+
+   ```apache
+   now()
+   current_timestamp()
+   year(date)
+   month(date)
+   day(date)
+   hour(daye)
+   ```
