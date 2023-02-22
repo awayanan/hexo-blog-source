@@ -1,5 +1,5 @@
 ---
-title: 如何成为优秀的供应链算法工程师
+title: Recipe
 date: 2023-02-20 11:32:53
 categories:
   - 运筹优化
