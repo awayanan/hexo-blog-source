@@ -54,7 +54,7 @@ date: 2023-02-22 21:31:13
 
 1. 聚合函数
 
-   ```apache
+   ```
    count(expr)  # 计数
    sum(expr)    # 求和
    avg(expr)    # 平均
