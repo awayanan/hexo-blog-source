@@ -52,7 +52,7 @@ date: 2023-02-22 21:31:13
 
 <h3 id="03">Hive函数</h3>
 
-1、聚合函数
+1. 聚合函数
 ```apache
 count(expr)  # 计数
 sum(expr)    # 求和
