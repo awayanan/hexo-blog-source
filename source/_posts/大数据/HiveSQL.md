@@ -63,12 +63,14 @@ hive详情
    min(expr)    # 最小
    max(expr)    # 最大
    ```
+   
 2. 条件函数
 
    ```apache
    if(expr, trueValue, falseValue)                                              # 如果expr为true，返回trueValue，否则返回falseValue
    case when expr1 then result1 when expr2 then result2 ... else defaultValue   # 按照顺序判断expr是否满足条件，满足则返回对应结果，否则返回默认结果
    ```
+   
 3. 字符串函数
 
    ```apache
@@ -81,6 +83,7 @@ hive详情
    ltrim(str)
    rtrim(str)
    ```
+   
 4. 数组函数
 
    ```apache
@@ -89,6 +92,7 @@ hive详情
    array_size(array)              # 返回数组的大小
    element_at(array, index)b      # 返回数组指定位置的元素值
    ```
+   
 5. 正则表达式函数
 
    ```apache
@@ -96,6 +100,7 @@ hive详情
    regexp_replace(str, pattern, replacement)   # 替换字符串中匹配正则表达式的字串
    regexp_like(str, pattern)                   # 判断字符串是否匹配正则表达式
    ```
+   
 6. 数值函数
 
    ```apache
@@ -104,6 +109,7 @@ hive详情
    floor(x)     # 返回小于等于x的最小整数
    round(x, d)  # 保留d小数位数的x的四舍五入
    ```
+   
 7. 时间日期函数
 
    ```apache
@@ -113,4 +119,13 @@ hive详情
    month(date)
    day(date)
    hour(daye)
+   ```
+   
+8. 其他函数
+
+   ```apache
+   cast(expr AS type)           # 将表达式的类型转换为其他类型
+   coalesce(expr1, expr2, ...)  # 返回第一个非NULL表达式的值
+   nullif(expr1, expr2)         # 如果expr1等于expr2，返回NULL，否则返回expr1的值
+   rand([seed])                 # 返回一个随机数
    ```
