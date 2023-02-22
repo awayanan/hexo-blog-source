@@ -52,8 +52,6 @@ date: 2023-02-22 21:31:13
 
 <h3 id="03">Hive函数</h3>
 
-hive详情
-
 1. 聚合函数
 
    ```apache
@@ -120,7 +118,7 @@ hive详情
    day(date)
    hour(daye)
    ```
-   
+
 8. 其他函数
 
    ```apache
