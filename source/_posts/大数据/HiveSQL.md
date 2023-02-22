@@ -1,5 +1,5 @@
 ---
-title: Hive SQL Recipe
+title: HiveSQL
 categories:
   - 大数据
 tags:
