@@ -142,7 +142,7 @@ giteement:
 busuanzi:
   enable: true
   site_visit: true  # 站点访问量显示
-  article_visit: true  # 文章访问量显示
+  article_visit: false  # 文章访问量显示
 
 # 网易云音乐插件
 music:
