@@ -9,13 +9,12 @@ permalink: /404.html
 
 ## 这是一個不存在的页面
 
-对不起awa，该页面yanan还木有开始建设哦.......😎
+对不起，该页面还木有开始建设哦.......😎
 
 预计将在约 <span id="timeout">10</span> 秒后返回首页。
 
-当然，你可以 **[点这里](https://www.awayanan.wang/)** 直接返回首页。
+当然，你也可以 **[点这里](https://www.awayanan.wang/)** 直接返回首页。
 
-![](https://github.com/liu-cui/liu-cui/blob/main/assets/github-contribution-grid-snake.gif)
 
 <script>
 let countTime = 10;
