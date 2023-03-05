@@ -290,9 +290,15 @@ friends:
     img: https://sci-hub.st/pictures/ravenround_hs.gif
     description: 将知识带给每个人
   Code With Me:
-    url: https://uoj.ac/
-    img: https://uoj.ac/pictures/UOJ.png
-    description: 你的排名是...
+    url: https://code.google.com/archive/p/aoapc-book/
+    img: https://storage.googleapis.com/google-code-archive/v2/code.google.com/aoapc-book/logo.png
+    description: 我用什么才能把你留住？
+  Marxists:
+    url: https://www.marxists.org/chinese/index.html
+    img: https://www.marxists.org/chinese/images/1-marx.jpg
+    description: 马克思主义是一种理论，也是一项事业。
+
+
 
 
 # 关于我
