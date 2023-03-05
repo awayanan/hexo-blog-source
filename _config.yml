@@ -123,16 +123,20 @@ jsonContent:
       date: true
       path: true
       text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
+      raw: true
+      content: true
+      slug: true
+      updated: true
       comments: false
       link: false
       permalink: false
       excerpt: false
       categories: true
       tags: true
+
+# Extensions
+plugins:
+  hexo-generator-feed
 
 
 # Feed Atom
@@ -145,6 +149,11 @@ feed:
 filter_image:
    # 日志是否启用
    #   log: true
+
+
+# UML
+plantuml:
+  render: "PlantUMLServer"
 
 # 搜索框和今日诗词
 search:
