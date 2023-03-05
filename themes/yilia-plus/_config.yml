@@ -270,21 +270,29 @@ smart_menu:
 
 # 友情链接
 friends:
-#  技术笔记:  #网站名称
-#    #网站地址
-#    url: https://zhousiwei.gitee.io/ibooks/
-#    #网站图片(可忽略不写)
-#    img: https://zhousiwei.gitee.io/ibooks/favicon.ico
-#    #网站简介(可忽略不写)
-#    description: 记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析
+  技术笔记:  #网站名称
+    #网站地址
+    url: https://zhousiwei.gitee.io/ibooks/
+    #网站图片(可忽略不写)
+    img: https://zhousiwei.gitee.io/ibooks/favicon.ico
+    #网站简介(可忽略不写)
+    description: 记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析
   GitHub:
     url: https://github.com/liu-cui
-    img: https://avatars.githubusercontent.com/in/15368?s=64&v=4
-    description: 关注我的Github吧，有更多精彩内容哦
+  码云:
+    url: https://gitee.com/liu-cui
   谷歌学术:
     url: https://scholar.google.com/
   sci-hub:
     url: https://sci-hub.st/
 
 # 关于我
-aboutme: 弱小和无知不是生存的障碍，傲慢才是。<br><br>技术栈：java|python|c++|...<br><br>我的邮箱：awayanan@alumni.edu.cn<br><br>新的一年不要生病<br>更加热爱生活
+aboutme: 弱小和无知不是生存的障碍，傲慢才是。<br>
+  <br>🛠技术栈：
+  https://img.shields.io/badge/-Java-333333?style=flat&logo=Java&logoColor=007396
+  |https://img.shields.io/badge/-Python-333333?style=flat&logo=Python&logoColor=007396
+  |c++
+  |...<br>
+  <br>我的邮箱：awayanan@alumni.edu.cn<br>
+  <br>新的一年不要生病<br>
+  <br>更加热爱生活<br>
