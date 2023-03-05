@@ -280,11 +280,20 @@ friends:
   Github:
     url: https://github.com/liu-cui
     img: https://avatars.githubusercontent.com/in/15368?s=64&v=4
-    description: 冷笑关注我吧
-  谷歌学术:
+    description: 关注我吧
+  Google Scholar:
     url: https://scholar.google.com/
-  sci-hub:
+    img: https://lh3.googleusercontent.com/b3K6HUF_rNzMlsVAbVqmZhlEgmhkmihjlVTKH8JKr-CuZX80LDYbnChZxK2_sd69cRarQvrmFX2yDAhx8zXggfAT=w128-h128-e365-rj-sc0x00ffffff
+    description: 站在巨人的肩膀上
+  Sci Hub:
     url: https://sci-hub.st/
+    img: https://sci-hub.st/pictures/ravenround_hs.gif
+    description: 将知识带给每个人
+  Code With Me:
+    url: https://uoj.ac/
+    img: https://uoj.ac/pictures/UOJ.png
+    description: 你的排名是...
+
 
 # 关于我
 aboutme: 弱小和无知不是生存的障碍，傲慢才是。<br><br>🛠技术栈：Java|Python|C/C++|...<br><br>我的邮箱：awayanan@alumni.edu.cn<br><br>新的一年不要生病<br><br>更加热爱生活<br>
