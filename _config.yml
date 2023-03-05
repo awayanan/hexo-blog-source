@@ -134,10 +134,6 @@ jsonContent:
       categories: true
       tags: true
 
-# Extensions
-plugins:
-  hexo-generator-feed
-
 
 # Feed Atom
 feed:
