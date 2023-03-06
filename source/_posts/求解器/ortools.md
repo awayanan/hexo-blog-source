@@ -13,12 +13,14 @@ date: 2023-03-06 12:59:00
 ## Installation
 ### Python
 1. installation with pip
+
 ```commandline
 python -m pip install --upgrade --user ortools
 ```
 
 ### Java
 1. installation with gradle
+
 ```commandline
 implementation 'com.google.ortools:ortools-java:9.4.1874'
 ```
