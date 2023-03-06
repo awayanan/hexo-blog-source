@@ -5,14 +5,10 @@ categories: [类别]
 tags: [tag1,tag2]
 ---
 
-## intro
+## introduction
 
 
 ## detail
- 
-### d1
-
-### d2
 
 
 ## conclusion
