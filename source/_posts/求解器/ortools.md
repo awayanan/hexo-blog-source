@@ -8,12 +8,40 @@ tags:
 date: 2023-03-06 12:59:00
 ---
 
+>[Route. Schedule. Plan. Assign. Pack. Solve.](https://developers.google.com/optimization?hl=zh-cn)
 
-## introduction
+## Installation
+### Python
+1. installation with pip
+```commandline
+python -m pip install --upgrade --user ortools
+```
+
+### Java
+1. installation with gradle
+```commandline
+implementation 'com.google.ortools:ortools-java:9.4.1874'
+```
+
+## Guides
+### Python
+#### Variables Generation Rule
+
+#### Constraints Generation Rule
+
+#### Objective Function Generation Rule
 
 
-## detail
- 
+#### Status Of Model Tuning
 
 
-## conclusion
+#### Other Rule
+
+## Example
+
+a series of simple examples
+
+### VRP
+
+
+### TSP
