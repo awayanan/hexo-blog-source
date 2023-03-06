@@ -8,7 +8,9 @@ subtitle: ''
 description: ''
 keywords:
 author: Awayanan
-language: zh-CN
+language:
+  - zh-Hans
+  - en
 timezone: Asia/Shanghai
 
 # URL
