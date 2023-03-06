@@ -13,7 +13,7 @@ menu:
 subNav:
   - github: "https://github.com/liu-cui"
   - gitee: "https://gitee.com/liu-cui"
-  - twitter: "https://twitter.com/awayfromnan/"
+  # - twitter: "https://twitter.com/awayfromnan/"
   # - jianshu: "#" #简书
   # - cnblog: "#"
   # - blog: "#"
@@ -27,7 +27,7 @@ subNav:
   # - segmentfault: "#"
   # - bilibili: "#"
   # - acfun: "#"
-  # - mail: "awaynan@alumni.edu.cn"
+  - mail: "awaynan@alumni.edu.cn"
   # - facebook: "#"
   # - google: "#"
   # - twitter: "#"
