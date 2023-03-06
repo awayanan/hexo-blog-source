@@ -34,7 +34,7 @@ implementation 'com.google.ortools:ortools-java:9.4.1874'
 #### Objective Function Generation Rule
 
 
-#### Status Of Model Tuning
+#### Status Of Model Tuning Rule
 
 
 #### Other Rule
