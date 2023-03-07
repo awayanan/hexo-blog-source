@@ -179,6 +179,7 @@ git reset --keep [commit]  # 重置当前HEAD为指定的commit，但保持暂�
 ```bash
 git log
 git reflog                                 # 显示当前分支最近几次提交
+git reflog show --date=iso dev             # 查看dev分支的历史提交记录
 git log -p[--patch] -2                     # 显示最近的两次提交差异
 git log --stat                             # 显示每次提交的简略信息
 git log --pretty=oneline  
