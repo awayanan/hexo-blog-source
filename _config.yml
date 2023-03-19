@@ -117,7 +117,7 @@ deploy:
   branch: main
 
 # Yilia-plus Content Config
-jsonContent:
+  jsonContent:
     meta: false
     pages: false
     posts:
@@ -125,15 +125,15 @@ jsonContent:
       date: true
       path: true
       text: false
-      raw: true
-      content: true
-      slug: true
-      updated: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
       comments: false
       link: false
       permalink: false
       excerpt: false
-      categories: true
+      categories: false
       tags: true
 
 
