@@ -1,7 +1,9 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> <%if(index){%> article-index<%}%>" itemscope itemprop="blogPost">
-  <% if (index && post.top){ %>
-	置顶
-  <% } %>
+  {% if post.top %}
+     <i class="fa fa-thumb-tack"></i>
+     <font color=7D26CD>置顶</font>
+     <span class="post-meta-divider">|</span>
+  {% endif %}
   <div class="article-inner">
     <% if (post.link || post.title){ %>
 
