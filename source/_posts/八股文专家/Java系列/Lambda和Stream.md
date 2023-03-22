@@ -1,10 +1,11 @@
 ---
-title: 性能调优
+title: Lambda和Stream
 categories:
-  - 微服务
+  - Effective Java
 tags:
-  - 性能调优
-date: 2023-03-20 21:35:55
+  - Lambda
+  - Stream
+date: 2023-03-20 22:02:07
 ---
 
 >write something here
