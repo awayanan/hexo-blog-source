@@ -8,6 +8,7 @@ descriptions:
 
 >write something here
 
+<!-- more -->
 
 ## last updated timeline
 
