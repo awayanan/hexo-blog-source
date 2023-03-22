@@ -9,6 +9,8 @@ tags:
 ---
 > 没有BUG的代码是不完整的
 
+<!-- more -->
+
 ## 总览
 
 ![](/images/git.png)

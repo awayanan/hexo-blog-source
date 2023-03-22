@@ -6,8 +6,10 @@ categories:
 tags: 
   - 博客
   - hexo
-  - Github Actions
 ---
+
+<!-- more -->
+
 # 你在干什么？
 
 用hexo撰写博客很方便，还可以结合github action 自动化部署博客，心动不如行动。
