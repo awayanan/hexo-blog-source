@@ -1,5 +1,6 @@
 ﻿# Header-菜单
 menu:
+  主页: /
   📚归档: /archives/
   🌻分类标签: /categories/
   🐱技术笔记: /category/技术笔记/
@@ -21,11 +22,11 @@ subNav:
   # - rss: "#"
   # - zhihu: "#"
   # - qq: "img/2434387555.jpg"
-  # - weixin: "img/weixin_.png"
+  - weixin: "img/weixin.png"
   # - weibo: "#"
   # - douban: "#"
   # - segmentfault: "#"
-  # - bilibili: "#"
+  - bilibili: "https://space.bilibili.com/36752424/dynamic"
   # - acfun: "#"
   # - mail: "awaynan@alumni.edu.cn"
   # - facebook: "#"
@@ -53,7 +54,7 @@ rss: /atom.xml
 # Content
 
 # 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
-excerpt_link: more
+# excerpt_link: more
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
@@ -73,7 +74,7 @@ reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
 alipay: /img/alipay.jpg
 # 微信二维码图片地址
-weixin: /img/weixin.jpg
+weixin: /img/weixin.png
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
