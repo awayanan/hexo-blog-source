@@ -1,12 +1,6 @@
 <article class="archive-article archive-type-<%= post.layout %>">
   <div class="archive-article-inner">
     <header class="archive-article-header">
-        <% if (post.link || post.title){ %>
-        <% if (index && post.top){ %>
-	   <i class="fa fa-thumb-tack"></i>
-     <font color=7D26CD>🔝置顶</font>
-     <span class="post-meta-divider"></span>
-<% } %>
       	<div class="article-meta">
 	      	<%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
         </div>
