@@ -52,8 +52,9 @@ jobs:
         run: |
           hexo clean 
           hexo g
-          cp source/googleed93f053bbb1c2b8.html public/
           cp source/sitemap.xml public/
+          cp source/googleed93f053bbb1c2b8.html public/
+
          
         
       # 2、部署到 GitHub Pages
