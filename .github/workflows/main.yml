@@ -48,6 +48,7 @@ jobs:
       # 生成静态文件
       - name: Generate files
         # 编译 markdown 文件
+        # 添加谷歌发现html & sitemap
         run: |
           hexo clean 
           hexo g
