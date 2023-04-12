@@ -157,3 +157,9 @@ plantuml:
 search:
   path: search.xml
   field: all
+
+# 站点地图
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+
