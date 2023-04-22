@@ -52,7 +52,7 @@ jobs:
         run: |
           hexo clean 
           hexo g
-          cp source/{googleed93f053bbb1c2b8.html,robots.txt}  public/
+          cp source/{googleed93f053bbb1c2b8.html}  public/
 
 
          
