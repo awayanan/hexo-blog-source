@@ -19,7 +19,25 @@ date: 2023-02-22 21:31:13
 
 <h3 id="01">Hive对表操作命令</h3>
 
-1. 模糊搜表<font color=Blue>show tables like '*name*'</font>
+| for what | how  |
+|--| ----  |
+| 模糊搜表 | show tables like 'table_name' |
+| 表结构 | desc table_name |
+| 表分区 | show partitions table_name |
+| 表结构 | desc table_name |
+| 修改表名 | alter table old_table_name rename to new_table_name |
+| 复制表结构 | create table new_table_name like table_name|
+| 删除表 | drop table if exist table_name |
+| 建表 | create table if not exist table_name |
+| 删除表分区 | alter table table_name drop partition(dt='2023-02-28'')|
+| 添加表分区 | alter table table_name add partition(dt='2023-02-28'')|
+|  |  |
+|  |  |
+
+
+
+
+1. 模糊搜表 <font color=Blue>show tables like '*name*'</font>
 2. 表结构信息
    ```desc table_name;```
 3. 分区信息
