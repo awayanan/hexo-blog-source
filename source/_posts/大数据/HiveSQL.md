@@ -3,7 +3,7 @@ title: HiveSQL常用命令清单
 categories:
   - hive
 tags:
-  - hive sql
+  - sql
 layout:
   - article
 date: 2023-02-22 21:31:13
@@ -19,10 +19,13 @@ date: 2023-02-22 21:31:13
 
 <h3 id="01">Hive对表操作命令</h3>
 
-1. 模糊搜表```show tables like '*name*';```
-2. 表结构信息```desc table_name;```
-3. 分区信息```show partitions table_name```
-4. 修改表名```alter table old_table_name rename to new_table_name;```
+1. 模糊搜表<font color=Blue>show tables like '*name*'</font>
+2. 表结构信息
+   ```desc table_name;```
+3. 分区信息
+   ```show partitions table_name```
+4. 修改表名
+   ```alter table old_table_name rename to new_table_name;```
 5. 从查询语句给表插入数据```insert overwrite table table_name partition(dt) select & from table_name;```
 6. 复制表结构```create table new_table_name like table_name;```
 7. 添加字段```alter table table_name add columns(columns_values bigint comment 'comment_text');```
@@ -49,7 +52,7 @@ date: 2023-02-22 21:31:13
    2. 降序`order by a,b desc(descend)`
 4. 排序
    1. 局部排序```sort by```, 基于mapreduce的内部排序，不是全局结果集的全排序
-   2. 分区排序```distribute by```, 一般结合```sort by``使用进行分区排序
+   2. 分区排序```distribute by```, 一般结合```sort by```使用进行分区排序
 
 <h3 id="03">Hive函数</h3>
 
