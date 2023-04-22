@@ -20,7 +20,7 @@ date: 2023-02-22 21:31:13
 <h3 id="01">Hive对表操作命令</h3>
 
 | for what | how  |
-|--| ----  |
+|:--| :----  |
 | 模糊搜表 | show tables like 'table_name' |
 | 表结构 | desc table_name |
 | 表分区 | show partitions table_name |
@@ -30,8 +30,8 @@ date: 2023-02-22 21:31:13
 | 删除表 | drop table if exist table_name |
 | 清空表 | truncate table table_name |
 | 建表 | create table if not exist table_name |
-| 删除表分区 | alter table table_name drop partition(dt='2023-02-28'')|
-| 添加表分区 | alter table table_name add partition(dt='2023-02-28'')|
+| 删除表分区 | alter table table_name drop partition(dt='2023-02-28')|
+| 添加表分区 | alter table table_name add partition(dt='2023-02-28')|
 | 添加字段 | alter table table_name add columns(columns_values bigint comment 'comment_text')|
 | 添加字段 | alter table table_name modify old_column new_column varchar(255) comment 'comment_text'|
 |  |  |
