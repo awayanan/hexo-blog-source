@@ -44,6 +44,8 @@ jobs:
           npm install hexo-cli -g
           npm install
           npm install hexo-abbrlink --save
+          npm install hexo-generator-sitemap --save
+          npm install hexo-generator-baidu-sitemap --save
            
       
       # 生成静态文件
