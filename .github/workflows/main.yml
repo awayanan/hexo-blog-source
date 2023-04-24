@@ -43,6 +43,7 @@ jobs:
         run: |
           npm install hexo-cli -g
           npm install
+          npm install hexo-abbrlink --save
            
       
       # 生成静态文件
