@@ -1,11 +1,11 @@
 ﻿# Header-菜单
 menu:
-  📚归档: /archives/
-  🌻分类标签: /categories/
-  🐱技术笔记: /category/技术笔记/
-  🐶运筹优化: /category/运筹优化/
+  🏠归档: /archives/
+  🏷分类标签: /categories/
+  👩🏻‍💻技术笔记: /category/技术笔记/
+  🤔运筹优化: /category/运筹优化/
   🍉机器学习: /category/机器学习/
-  🥭随笔读书: /category/随笔读书/
+  📖随笔读书: /category/随笔读书/
 
 
 
@@ -255,7 +255,7 @@ style:
 slider:
   # 是否默认展开tags板块
   showTags: true
-  showCategories: true
+  # showCategories: true
 
 
 # 智能菜单
@@ -264,7 +264,7 @@ slider:
 #smart_menu:
 #  friends: false
 smart_menu:
-#  innerArchive: '所有文章'
+  innerArchive: '所有文章'
   friends: '✨友链'
   aboutme: '😎关于我'
 
