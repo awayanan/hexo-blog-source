@@ -6,6 +6,8 @@
 5. [ ] 所有文章搜索修复
 6. [ ] 建立相册集
 7. [ ] 加速站点访问
+8. [ ] 作死。。。
+9. [ ] 作死。。。
 
 ### Article Writing Regulations
 1. 同一类型文章，只允许有一个标签区分，参考标签[设计模式](https://www.awayanan.wang/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/2023/03/08/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/)
