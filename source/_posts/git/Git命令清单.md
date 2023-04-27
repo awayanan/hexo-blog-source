@@ -13,7 +13,7 @@ tags:
 
 ## 总览
 
-![](/images/git.png)
+![](source/images/git.png)
 
 ## 初始化代码库
 
