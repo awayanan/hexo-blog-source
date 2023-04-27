@@ -1,21 +1,14 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> <%if(index){%> article-index<%}%>" itemscope itemprop="blogPost">
   <div class="article-inner">
     <% if (post.link || post.title){ %>
-        <% if (index && post.top){ %>
-	   <i class="fa fa-thumb-tack"></i>
-     <font color=7D26CD>🔝置顶</font>
-     <span class="post-meta-divider"></span>
-<% } %>
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
-        <% if (!post.noDate){ %>
-        <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
-        <% } %>
-        <span id="jinrishici-sentence">正在加载今日诗词....</span>
-        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        <% if(theme.word_count && theme.word_count.enable && !post.no_word_count){%>
-          <%- partial('post/word') %>
-        <% } %>
+  <%- partial('post/title', {class_name: 'article-title'}) %>
+  <% if (!post.noDate){ %>
+  <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
+  <% } %>
+  <% if(theme.word_count && theme.word_count.enable && !post.no_word_count){%>
+    <%- partial('post/word') %>
+  <% } %>
   </header>
   <% } %>
   <div class="article-entry" itemprop="articleBody">
@@ -63,7 +56,7 @@
     <% } %>
 
     <% if (((theme.copyright_type === 2) || (theme.copyright_type === 1 && post.copyright)) && !index){ %>
-    <div class="declare">
+    <div class="declare"> 
       <ul class="post-copyright">
         <li>
           <strong>本文作者：</strong>
@@ -71,15 +64,12 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="<%- yilia_plus_full_url(post.path) %>" title="<%= post.title %>" target="_blank"><%- yilia_plus_full_url(post.path) %></a>
+          <a href="<%= config.url %>/<%= post.path %>" title="<%= post.title %>" target="_blank"><%= config.url %>/<%= post.path %></a>
         </li>
-        <% if (theme.copyright_text || theme.copyright_text == null){ %>
         <li>
           <strong>版权声明： </strong>
-          <% var defaultCopyrightText = '本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！'; %>
-          <%- ( theme.copyright_text == null || theme.copyright_text == true ) ? defaultCopyrightText : theme.copyright_text %>
+          本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
         </li>
-        <% } %>
       </ul>
     </div>
     <% } %>
