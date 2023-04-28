@@ -3,14 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: NaN
-subtitle: ''
-description: ''
-keywords: Dark Soul
-author: YANAN
-language:
-  - zh-Hans
-  - en
+title: Nan
+subtitle: RISE
+description: 人生如棋，黑白相间。
+keywords: 早上好
+author: CUI
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
