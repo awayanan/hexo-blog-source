@@ -1,13 +1,25 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
-description:
-toc: true 
-copyright: true
-reward: false
+categories: [类别]
+tags: [tag1]
+descriptions: 
 ---
 
+>write something here
 
->写下点什么吧
-<!--more-->
+<!-- more -->
+
+## last updated timeline
+
+
+## introduction
+
+
+## detail
+
+
+## conclusion
+
+
+## reference
