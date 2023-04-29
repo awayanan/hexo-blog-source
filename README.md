@@ -1,15 +1,12 @@
-## TimeLine of Blog Feature Updates
-1. [x] 2023/02/19 文章分类标签 done
-2. [x] 2023/02/20 页面诗词显示 done
-3. [x] 2023/03/22 文章置顶功能 done  
-4. [x] 2023/04/12 提交谷歌搜索引擎收录 done
-5. [ ] 所有文章搜索修复
-6. [ ] 建立相册集
-7. [ ] 加速站点访问
-8. [ ] 作死。。。
-9. [ ] 作死。。。
+## 本地博客功能更新
+1. [x] 侧边栏
+2. [x] 取消页面右上角的fork me 广告
+3. [x] 404页面
+4. [x] url持久化
+5. [x] 标签分类页
+6. [x] 目录浮动
+7. [x] [其他](https://gitee.com/wang-qz/hexo-blog-crystal#18-%E5%89%AF%E6%A0%87%E9%A2%98%E6%89%93%E5%AD%97%E6%95%88%E6%9E%9C%E6%94%B9%E4%B8%BA%E5%B1%95%E7%A4%BA%E4%BB%8A%E6%97%A5%E8%AF%97%E8%AF%8D)
+8. [ ] 公式渲染
 
-### Article Writing Regulations
-1. 同一类型文章，只允许有一个标签区分，参考标签[设计模式](https://www.awayanan.wang/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/2023/03/08/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/)
-2. ...
+## 建站
 

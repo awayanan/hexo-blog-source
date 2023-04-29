@@ -4,7 +4,7 @@
 
 # Site
 title: Nan
-subtitle: RISE
+subtitle: '人生如棋，黑白相间'
 description: 人生如棋，黑白相间。
 keywords: 早上好
 author: CUI
@@ -13,14 +13,13 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://www.awayanan.wang/
-# permalink: :name/:year/:month/:day/:title/
-permalink: posts/:abbrlink.html
+url: http://example.com
+#permalink: :year/:month/:day/:title/
+permalink: article/:title.html
 abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
   rep: hex    # 进制：dec(default) and hex
-# permalink_defaults: https://www.awayanan.wang/
-permalink_defaults: 
+permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
@@ -30,7 +29,7 @@ source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives
-category_dir: category
+category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -45,21 +44,22 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
-relative_link: true
+post_asset_folder: false
+relative_link: false
 future: true
 highlight:
   enable: false
   line_number: false
   auto_detect: true
   tab_replace: ''
-  wrap: false # true
-  hljs: false #true
+  wrap: true
+  hljs: true
 prismjs:
-  enable: true
+  enable: false
   preprocess: true
-  line_number: false
+  line_number: true
   tab_replace: ''
+
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -74,14 +74,6 @@ index_generator:
 default_category: uncategorized
 category_map:
 tag_map:
-
-
-# Archives
-collections:
-   archives:
-     output: true
-     permalink: /archives/:path/
-
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -111,59 +103,41 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: yilia-plus
-#theme: cafe 
-
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: git@github.com:liu-cui/liu-cui.github.io.git
-  branch: main
+  type: ''
 
-# Yilia-plus Content Config
+
+# yilia-plus 主题配置
 jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
-
-# Feed Atom
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-
-# https://github.com/JoeyBling/hexo-filter-image
-filter_image:
-   # 日志是否启用
-   #   log: true
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
 
 
-# UML
-plantuml:
-  render: "PlantUMLServer"
-
-# 搜索框和今日诗词
+# 搜索框
 search:
   path: search.xml
   field: all
 
-# 站点地图
-# 自动生成sitemap
-sitemap:
-  path: sitemap.xml
-
+# 端口
+server:
+  port: 8080
+  compress: true
+  header: true

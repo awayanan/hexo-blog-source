@@ -1,37 +1,20 @@
 ﻿# Header-菜单
 menu:
-  🏠归档: /archives/
-  🏷分类标签: /categories/
-  👩🏻‍💻技术笔记: /category/技术笔记/
-  🤔运筹优化: /category/运筹优化/
-  🍉机器学习: /category/机器学习/
-  📖随笔读书: /category/随笔读书/
+  主页: /
+  归档: /archives
+  标签: /categories
+  笔记: /categories/笔记
+  随笔: /categories/随笔
 
 
-
+# subNav-导航
 # subNav-子导航
 subNav:
   - github: "https://github.com/liu-cui"
   - gitee: "https://gitee.com/liu-cui"
-  # - twitter: "https://twitter.com/awayfromnan/"
-  # - jianshu: "#" #简书
-  # - cnblog: "#"
-  # - blog: "#"
-  # - csdn: "#"
-  # - rss: "#"
-  # - zhihu: "#"
-  # - qq: "img/2434387555.jpg"
-  - weixin: "img/liucui.png"
-  # - weibo: "#"
-  # - douban: "#"
-  # - segmentfault: "#"
+  #- weixin: "img/CUI.png"
   - bilibili: "https://space.bilibili.com/36752424/dynamic"
-  # - acfun: "#"
-  # - mail: "awaynan@alumni.edu.cn"
-  # - facebook: "#"
-  # - google: "#"
-  # - twitter: "#"
-  # - linkedin: "#"
+
 
 # 悬停预览图片效果
 hover_effect:
@@ -47,17 +30,16 @@ rss: /atom.xml
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
 # 请将您的 url 设为 http://yoursite.com/blog 并把 / 设为 /blog/。
-# 新版本已弃用，请在博客根目录文件进行配置
-# root: /
+root: /
 
 # Content
 
-# 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
-# excerpt_link: more
+# 文章太长，截断按钮文字
+excerpt_link: more
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
-mathjax: true
+mathjax: false
 
 # Open link in a new tab | 是否在新窗口打开链接
 open_in_new:
@@ -69,7 +51,7 @@ open_in_new:
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 1
 # 打赏wording
-reward_wording: '感谢老铁的支持🤝'
+reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
 alipay: /img/weixin.png
 # 微信二维码图片地址
@@ -77,7 +59,7 @@ alipay: /img/weixin.png
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
-toc: 2
+toc: 1
 # 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false
 toc_hide_index: false
 # 目录为空时的提示
@@ -113,7 +95,7 @@ disqus: true
 
 # 3、Gitment----基于GitHub的评论系统(关闭请设置gitment_owner为false)
 # 关于如何集成:https://www.jianshu.com/p/ac7658cc912f
-gitment_owner: false    #你的 GitHub ID
+gitment_owner: false      #你的 GitHub ID
 # 是否使用官方js(false可以提升访问速度，本地修改过一部分的js，官方js可能会出现服务器不稳定，不太建议使用)
 gitment_remote: false
 gitment_repo: ''          #存储评论的 repo name(需要在Github创建)
@@ -129,7 +111,7 @@ giteement:
   # 是否使用官方js(false可以提升访问速度)
   remote: false
   redirect_uri: ''   # 应用回调地址(请和配置的第三方应用保持一致)
-  # 不能更改(网上开源项目`https://github.com/Rob--W/cors-anywhere`作者提供的专门用来跨域服务器的配置)
+  # 不能更改(网上开源项目https://github.com/Rob--W/cors-anywhere作者提供的专门用来跨域服务器的配置)
   oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token
   giteeID: ''  # 你的码云账号英文名
   # 存储评论的 repo name(需要在码云仓库创建公开仓库)
@@ -154,6 +136,7 @@ music:
   # 提示文本(关闭请设置为false)
   text: Welcome to the climb up reach for the summit<br>Visions pray that one false step lead the end so<br>Higher and higher you chase it<br>It's deep in your blood go and take it<br>This is your moment take to the skies go<br>Prove yourself and<br>RISE RISE
 
+
 # 页面点击小红心
 clickLove:
   # (关闭请设置为false)
@@ -165,15 +148,17 @@ github:
   url: https://github.com/JoeyBling/hexo-theme-yilia-plus
   enable: false
 
+# 页脚 Litten(此配置项已弃用)
+# 帮助我们让更多人可以更方便使用Hexo，请尽量不要修改此主题配置
+pageFooter:
+  litten: GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a>
 
-# 开启百度站长平台自动推送(https://ziyuan.baidu.com/linksubmit/index)
-baidu_push: true
+# 开启百度站长平台主动推送(https://ziyuan.baidu.com/linksubmit/index)
+baidu_push: false
 
 # 版权声明
 # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
 copyright_type: 2
-# 版权声明自定义文本(关闭请设置为false)
-copyright_text:
 
 # 网站成立年份(默认为 2018，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
 since: 2022
@@ -198,8 +183,9 @@ tab_title_change:
   left_tab_title: '(つェ⊂) 你没资格哦~ '
   return_tab_title: '(*´∇｀*) 前有骗子啦~ '
 
-# https://github.com/willin/hexo-wordcount
 # 是否开启字数统计(关闭请设置enable为false)
+# https://github.com/willin/hexo-wordcount
+# 必须安装 `hexo-wordcount` 插件，在根目录执行 `npm i hexo-wordcount --save`
 # 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义关闭字数统计
 word_count:
   enable: true
@@ -214,29 +200,6 @@ activate_power_mode:
   colorful: true
   # 是否开启摇动
   shake: false
-
-# 飘雪特效
-# https://github.com/MlgmXyysd/snow.js
-snow: false
-
-# 看板娘动态模型插件
-## https://github.com/JoeyBling/live2d-widget.js
-live2d:
-  # (关闭请设置为false)
-  enable: false
-  # 模型名称(取值请参考：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/live2d%E6%A8%A1%E5%9E%8B%E5%8C%85%E5%B1%95%E7%A4%BA)
-  model: hibiki
-  display:
-    position: right # 显示位置：left/right(default: 'right')
-    width: 145  # 模型的长度(default: 150)
-    height: 315 # 模型的高度(default: 300)
-    hOffset: 50 # 水平偏移(default: 0)
-    #vOffset: -20 # 垂直偏移(default: -20)
-  mobile:
-    show: false # 是否在移动设备上显示(default: true)
-    scale: 0.6 # 移动设备上的缩放(default: 0.5)
-  react:
-    opacity: 0.8 # 模型透明度(default: 0.7)
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
@@ -255,8 +218,6 @@ style:
 slider:
   # 是否默认展开tags板块
   showTags: true
-  # showCategories: true
-
 
 # 智能菜单
 # 如不需要，将该对应项置为false
@@ -270,13 +231,6 @@ smart_menu:
 
 # 友情链接
 friends:
-  #技术笔记:  #网站名称
-    #网站地址
-    #url: https://zhousiwei.gitee.io/ibooks/
-    #网站图片(可忽略不写)
-    #img: https://zhousiwei.gitee.io/ibooks/favicon.ico
-    #网站简介(可忽略不写)哼哼 偷笑 冷笑
-    #description:
   Github:
     url: https://github.com/liu-cui
     img: https://avatars.githubusercontent.com/in/15368?s=64&v=4
@@ -299,8 +253,5 @@ friends:
     description: 马克思主义是一种理论，也是一项事业。
 
 
-
-
 # 关于我
-aboutme: 凡人求果，菩萨求因。111
-
+aboutme: 凡人求果，菩萨求因。嘤嘤嘤，修仙～
