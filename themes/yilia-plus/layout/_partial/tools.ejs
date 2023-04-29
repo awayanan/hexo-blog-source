@@ -36,7 +36,7 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
-            <% site.tags.forEach(function(tag, i){ %>
+            <% site.tags.forEach(function(tag, i){ %> 
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color<%= tag.name.length % 5 + 1 %>"><%-tag.name%></a>
               </li>
@@ -90,8 +90,7 @@
         <ul class="search-ul">
           <% for (var i in theme.friends){ %>
             <li class="search-li">
-              <a href="<%- url_for(theme.friends[i].url) %>" target="_blank"
-                class="search-title" <% if (theme.friends[i].description){ %>title="<%= theme.friends[i].description %>"<% } %>>
+              <a href="<%- url_for(theme.friends[i].url) %>" target="_blank" class="search-title" <% if (theme.friends[i].description){ %>title="<%= theme.friends[i].description %>"<% } %>>
                 <% if (theme.friends[i].img){ %>
                   <img src="<%- url_for(theme.friends[i].img) %>">
                 <% } else { %>
@@ -115,5 +114,5 @@
     	</section>
     <%}%>
   </div>
-
+  
 </div>
